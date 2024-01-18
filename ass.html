@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Genotek - Your Trusted Source for Quality Expansion Joint Covers">
+    <meta name="keywords" content="Expansion Joint Covers, Architectural Solutions, Structural Protection">
+    <title>Genotek Expansion Joint Covers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+       <img src="/img/Due.jpg" alt="">
+            <h3 id="h3">Bijon Trading (Genotek)</h3>
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about">why choose us</a></li>
+            <li class="item"><a href="#why-choose-us">Explore Our Range </a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <div class="search">
+            <input type="search" name="search" placeholder="search Here">
+        </div>
+        </ul>
+
+    </nav>
+    <header>
+        <h1>Welcome to Genotek</h1>
+        <p>Your Trusted Partner in Expansion Joint Solutions</p>
+    </header>
+    
+
+    <section id="about">
+        <h2>About Genotek</h2>
+        <p>At Genotek, we specialize in providing high-quality Expansion Joint Covers designed to protect your structures and maintain their aesthetic appeal.</p>
+    </section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Genotek?</h2>
+        <ul>
+            <li>Premium Quality Materials</li>
+            <li>Customizable Solutions for Every Project</li>
+            <li>Expert Guidance from Our Team</li>
+        </ul>
+    </section>
+
+    <section id="explore-products" >
+        <h2>Explore Our Range &#128640;</h2>
+        <div class="product-card" onclick="showProductDetails('interior')">
+            <img src="/img/interior.jpg.jpg" alt="">
+            <p>Interior Expansion Joint Covers</p>
+        </div>
+        <div class="product-card" onclick="showProductDetails('exterior')">
+            <img src="/img/exterior-cover.jpg.jpg" alt="Exterior Expansion Joint Cover">
+            
+            <p>Exterior Expansion Joint Covers</p>
+        </div>
+        <div class="product-card" onclick="showProductDetails('architectural')">
+            <img src="/img/architectural-cover.jpg.jpg" alt="Architectural Expansion Joint System">
+            <p>Architectural Expansion Joint Systems</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us for More Information</h2>
+        <p>Fill out the form below, and our experts will get in touch with you.</p>
+        <form id="contactForm">
+            <input id="text" type="text" name="name" placeholder="Your Name" required>
+            <input id="email" type="email" name="email" placeholder="Your Email" required>
+            <input id="submit" type="submit" value="Get In Touch">
+        </form>
+        <div id="thankYouMessage" style="display: none;">
+            <p>Thank you for your interest! Our team will contact you shortly.</p>
+        </section>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Genotek. All rights reserved.</p>
+    </footer>
+
+  
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // You can add additional logic here, such as sending the form data to a server.
+            // For this example, we'll just show a thank-you message.
+
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+        });
+    </script>
+
+    
+</body>
+</html>
